@@ -1,0 +1,70 @@
+html {
+  background: rgb(124,18,188);
+}
+
+input:focus {
+  background: #fff;
+  border: 3px solid #486EFC;
+  outline: none;
+}
+
+.logo-main {
+  padding: 45px 30%;
+}
+@media (max-width: 1200px) {
+  .logo-main{
+    padding: 45px 25%;
+  }
+}
+@media (max-width: 640px) {
+  .logo-main{
+    padding: 50px 17.5%;
+  }
+}
+
+.ingresar {
+  color: #FFFFFF;
+  background-color: #F223C6;
+  font-size: 15px;
+  /* box-shadow: 0 6px #efa424; */
+}
+
+.ingresar:hover {
+  background-color: #f10ec0;
+  /* box-shadow: 0 4px #efa424;
+  top: 2px; */
+}
+
+.ingresar:active {
+  background-color: #c10b99;
+  /* box-shadow: 0 0 #efa424;
+  top: 6px; */
+}
+
+/* Clases de UIKit Modificadas
+ ========================================================================== */
+
+ .uk-container-small {
+   padding: 0 30%;
+ }
+
+ @media (max-width: 1200px) {
+   .uk-container-small{
+     padding: 0 27.5%;
+   }
+ }
+ @media (max-width: 960px) {
+   .uk-container-small{
+     padding: 0 22.5%;
+   }
+ }
+ @media (max-width: 640px) {
+   .uk-container-small{
+     padding: 0 5%;
+   }
+ }
+
+
+.uk-form-icon {
+  padding-left: 15px;
+}
