@@ -163,3 +163,15 @@ input:focus {
   padding-left: 20px;
   color: #F223C6;
 }
+
+.carta {
+  margin-top: 50px;
+}
+
+.uk-card {
+  padding: 10px;
+}
+
+.uk-button-primary {
+  margin-top: 10px;
+}

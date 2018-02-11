@@ -38,105 +38,59 @@
         </nav>
       </div>
 
-      <div class="uk-container uk-container-small uk-animation-slide-top">
-        <!-- Title header4 -->
-        <div class="uk-tile uk-padding-small  uk-margin-small ">
-          <h3 class="uk-heading-line uk-text-center"><span>Ingresa con tus datos de Keeper:</span></h3>
-        </div>
-
-
-        <!-- Form text inputs -->
-        <form>
-
-            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
-                <div class="uk-inline  uk-width-1-1 ">
-                    <span class="uk-form-icon" uk-icon="icon: user; ratio: 2"></span>
-                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded " type="text" placeholder="ID de Keeper">
-                </div>
-            </div>
-
-            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
-                <div class="uk-inline uk-width-1-1 ">
-                    <span class="uk-form-icon" uk-icon="icon: lock; ratio: 2"></span>
-                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded" type="password" placeholder="Contraseña">
-                </div>
-            </div>
-
-        </form>
-
-        <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-border-rounded uk-margin-medium uk-text-bold" >Ingresar</button></a>
-
-        <h4 class="uk-text-center uk-margin-remove"><span>Si aún no estás registrado y quieres prestar tus servicios en la plataforma dirígete <a href="https://www.jelpmi.mx/keepers.html">aquí</a>.</span></h4>
-
-        <!-- Title header4 -->
-        <div class="uk-tile uk-padding-small  uk-margin-small ">
-          <h3 class="uk-heading-line uk-text-center"><span>Ingresa con tus datos de Keeper:</span></h3>
-        </div>
-
-
-        <!-- Form text inputs -->
-        <form>
-
-            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
-                <div class="uk-inline  uk-width-1-1 ">
-                    <span class="uk-form-icon" uk-icon="icon: user; ratio: 2"></span>
-                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded " type="text" placeholder="ID de Keeper">
-                </div>
-            </div>
-
-            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
-                <div class="uk-inline uk-width-1-1 ">
-                    <span class="uk-form-icon" uk-icon="icon: lock; ratio: 2"></span>
-                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded" type="password" placeholder="Contraseña">
-                </div>
-            </div>
-
-        </form>
-
-        <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-border-rounded uk-margin-medium uk-text-bold" >Ingresar</button></a>
-
-        <h4 class="uk-text-center uk-margin-remove"><span>Si aún no estás registrado y quieres prestar tus servicios en la plataforma dirígete <a href="https://www.jelpmi.mx/keepers.html">aquí</a>.</span></h4>
+      <div class="uk-container uk-container-small uk-animation-slide-top uk-flex uk-flex-column servicios">
 
         <!-- TEMPLATE FOR EVERY CARD ELEMENT -->
-        <div class="uk-card uk-card-body">
-          <h3 class="uk-card-title">Default</h3>
-          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class=" carta uk-card  uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
+                <div class="uk-text-center uk-grid-collapse" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-card ">
+                          <p class="uk-margin-remove">Dirección</p>
+                          <h3 class="uk-margin-remove"><b>Zamora 177, Int 101, Condesa, CDMX</b></h3>
+                    </div>
+                </div>
+              </div>
+
+                <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+                    <div class="uk-width-1-2">
+                        <div class="uk-card  uk-card-body">
+                          <p class="uk-margin-remove">Hora</p>
+                          <h3 class="uk-margin-remove"><b>7:00 AM</b></h3>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-card uk-card-body">
+                          <p class="uk-margin-remove uk-padding-remove">Fecha</p>
+                          <h3 class="uk-margin-remove"><b>30 feb</b></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+                    <div class="uk-width-1-2">
+                        <div class="uk-card  uk-card-body">
+                          <p class="uk-margin-remove">Duración</p>
+                          <h3 class="uk-margin-remove"><b>4 horas</b></h3>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-card">
+                          <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded">Express</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-text-center uk-grid-collapse" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-card">
+                          <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-margin-medium uk-text-bold
+                            uk-margin-remove uk-padding-remove
+                            uk-border-rounded" >Ver Detalles</button></a>
+                        </div>
+                    </div>
+                </div>
+          </div>
         </div>
-
-        <div uk-grid>
-            <div></div>
-            <div></div>
-        </div>
-
-        <div class="servicio">
-          <div class="item">
-            <p class="titulo">Dirección</p>
-            <p class="dato">${my_services[i]["addres_street"]}, ${my_services[i]["addres_neighborhood"]}, ${my_services[i]["city"]}</p>
-          </div>
-
-          <div class="item">
-            <p class="titulo">Fecha</p>
-            <p class="dato">${my_services[i]["date"]}</p>
-          </div>
-
-          <div class="item">
-            <p class="titulo">Hora</p>
-            <p class="dato">${my_services[i]["hour"]}</p>
-          </div>
-
-          <div class="item">
-            <p class="titulo">Duración</p>
-            <p class="dato">${my_services[i]["lenght"]} horas</p>
-          </div>
-
-          <div class="detalles">
-            <a href="#" class="btn" />
-          </div>
-        </div>
-
-        <div class="servicios">
-        </div>
-
       </div>
 
 

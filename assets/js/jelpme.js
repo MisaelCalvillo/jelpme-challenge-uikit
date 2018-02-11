@@ -45,31 +45,59 @@ console.log(my_services[0]["addres_street"]);
 // loop through all the services
 for(var i = 0; i < my_services.length; i++){
   var servicio = `
-  <div class="servicio">
-    <div class="item">
-      <p class="titulo">Dirección</p>
-      <p class="dato">${my_services[i]["addres_street"]}, ${my_services[i]["addres_neighborhood"]}, ${my_services[i]["city"]}</p>
-    </div>
 
-    <div class="item">
-      <p class="titulo">Fecha</p>
-      <p class="dato">${my_services[i]["date"]}</p>
-    </div>
 
-    <div class="item">
-      <p class="titulo">Hora</p>
-      <p class="dato">${my_services[i]["hour"]}</p>
-    </div>
+  <div class=" carta uk-card  uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
+          <div class="uk-text-center uk-grid-collapse" uk-grid>
+              <div class="uk-width-1-1">
+                  <div class="uk-card ">
+                    <p class="uk-margin-remove">Dirección</p>
+                    <h3 class="uk-margin-remove"><b>${my_services[i]["addres_street"]}, ${my_services[i]["addres_neighborhood"]}, ${my_services[i]["city"]}</b></h3>
+              </div>
+          </div>
+        </div>
 
-    <div class="item">
-      <p class="titulo">Duración</p>
-      <p class="dato">${my_services[i]["lenght"]} horas</p>
-    </div>
+          <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+              <div class="uk-width-1-2">
+                  <div class="uk-card  uk-card-body">
+                    <p class="uk-margin-remove">Hora</p>
+                    <h3 class="uk-margin-remove"><b>${my_services[i]["hour"]}</b></h3>
+                  </div>
+              </div>
+              <div class="uk-width-1-2">
+                  <div class="uk-card uk-card-body">
+                    <p class="uk-margin-remove uk-padding-remove">Fecha</p>
+                    <h3 class="uk-margin-remove"><b>${my_services[i]["date"]}</b></h3>
+                  </div>
+              </div>
+          </div>
 
-    <div class="detalles">
-      <a href="#" class="btn" />
+          <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+              <div class="uk-width-1-2">
+                  <div class="uk-card  uk-card-body">
+                    <p class="uk-margin-remove">Duración</p>
+                    <h3 class="uk-margin-remove"><b>${my_services[i]["lenght"]} horas</b></h3>
+                  </div>
+              </div>
+              <div class="uk-width-1-2">
+                  <div class="uk-card">
+                    <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded">Express</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="uk-text-center uk-grid-collapse" uk-grid>
+              <div class="uk-width-1-1">
+                  <div class="uk-card">
+                    <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-margin-medium uk-text-bold
+                      uk-margin-remove uk-padding-remove
+                      uk-border-rounded" >Ver Detalles</button></a>
+                  </div>
+              </div>
+          </div>
     </div>
   </div>
+</div>
   `;
   console.log(servicio);
   $(".servicios").append(servicio);
