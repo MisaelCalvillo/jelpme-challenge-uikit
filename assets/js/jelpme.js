@@ -238,7 +238,7 @@ for(var i = 0; i < my_services.length; i++){
           <div class="uk-text-center uk-grid-collapse" uk-grid>
               <div class="uk-width-1-1">
                   <div class="uk-card">
-                    <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-margin-medium uk-text-bold
+                    <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge confirmados uk-margin-medium uk-text-bold
                       uk-margin-remove uk-padding-remove
                       uk-border-rounded" >Ver Detalles</button></a>
                   </div>
