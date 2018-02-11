@@ -146,8 +146,26 @@ input:focus {
   color: #F223C6;
 }
 
+/* Button to call client from Keepers and accept services */
 
+.green-button {
+  color: #FFFFFF;
+  background-color: #2EB771;
+  font-size: 15px;
+  /* box-shadow: 0 6px #efa424; */
+}
 
+.green-button:hover {
+  background-color: #248f57;
+  /* box-shadow: 0 4px #efa424;
+  top: 2px; */
+}
+
+.green-button:active {
+  background-color: #1a653e;
+  /* box-shadow: 0 0 #efa424;
+  top: 6px; */
+}
 
 
 /* Clases de UIKit Modificadas
