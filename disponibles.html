@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="background-plata">
   <head>
     <title>Servicios</title>
     <!-- Meta tags for encoding and browser size measuring -->
@@ -18,6 +18,127 @@
     <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
   </head>
   <body>
+    <!-- Add nav on top -->
+      <div class="uk-animation-slide-left" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="welcome.html"><button class="uk-close-large" type="button" uk-close=" ratio: 1.5"></button></a></li>
+                    <li>
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a class="uk-text-bold" href="#"><p class="new-message">Nuevos Servicios</p></a></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+
+      <div class="uk-container uk-container-small uk-animation-slide-top">
+        <!-- Title header4 -->
+        <div class="uk-tile uk-padding-small  uk-margin-small ">
+          <h3 class="uk-heading-line uk-text-center"><span>Ingresa con tus datos de Keeper:</span></h3>
+        </div>
+
+
+        <!-- Form text inputs -->
+        <form>
+
+            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
+                <div class="uk-inline  uk-width-1-1 ">
+                    <span class="uk-form-icon" uk-icon="icon: user; ratio: 2"></span>
+                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded " type="text" placeholder="ID de Keeper">
+                </div>
+            </div>
+
+            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
+                <div class="uk-inline uk-width-1-1 ">
+                    <span class="uk-form-icon" uk-icon="icon: lock; ratio: 2"></span>
+                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded" type="password" placeholder="Contraseña">
+                </div>
+            </div>
+
+        </form>
+
+        <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-border-rounded uk-margin-medium uk-text-bold" >Ingresar</button></a>
+
+        <h4 class="uk-text-center uk-margin-remove"><span>Si aún no estás registrado y quieres prestar tus servicios en la plataforma dirígete <a href="https://www.jelpmi.mx/keepers.html">aquí</a>.</span></h4>
+
+        <!-- Title header4 -->
+        <div class="uk-tile uk-padding-small  uk-margin-small ">
+          <h3 class="uk-heading-line uk-text-center"><span>Ingresa con tus datos de Keeper:</span></h3>
+        </div>
+
+
+        <!-- Form text inputs -->
+        <form>
+
+            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
+                <div class="uk-inline  uk-width-1-1 ">
+                    <span class="uk-form-icon" uk-icon="icon: user; ratio: 2"></span>
+                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded " type="text" placeholder="ID de Keeper">
+                </div>
+            </div>
+
+            <div class="uk-margin uk-box-shadow-xlarge uk-margin-medium">
+                <div class="uk-inline uk-width-1-1 ">
+                    <span class="uk-form-icon" uk-icon="icon: lock; ratio: 2"></span>
+                    <input class="uk-input uk-form-large uk-text-center uk-border-rounded" type="password" placeholder="Contraseña">
+                </div>
+            </div>
+
+        </form>
+
+        <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-border-rounded uk-margin-medium uk-text-bold" >Ingresar</button></a>
+
+        <h4 class="uk-text-center uk-margin-remove"><span>Si aún no estás registrado y quieres prestar tus servicios en la plataforma dirígete <a href="https://www.jelpmi.mx/keepers.html">aquí</a>.</span></h4>
+
+        <!-- TEMPLATE FOR EVERY CARD ELEMENT -->
+        <div class="uk-card uk-card-body">
+          <h3 class="uk-card-title">Default</h3>
+          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div uk-grid>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="servicio">
+          <div class="item">
+            <p class="titulo">Dirección</p>
+            <p class="dato">${my_services[i]["addres_street"]}, ${my_services[i]["addres_neighborhood"]}, ${my_services[i]["city"]}</p>
+          </div>
+
+          <div class="item">
+            <p class="titulo">Fecha</p>
+            <p class="dato">${my_services[i]["date"]}</p>
+          </div>
+
+          <div class="item">
+            <p class="titulo">Hora</p>
+            <p class="dato">${my_services[i]["hour"]}</p>
+          </div>
+
+          <div class="item">
+            <p class="titulo">Duración</p>
+            <p class="dato">${my_services[i]["lenght"]} horas</p>
+          </div>
+
+          <div class="detalles">
+            <a href="#" class="btn" />
+          </div>
+        </div>
+
+        <div class="servicios">
+        </div>
+
+      </div>
+
 
     <!-- Connect with the JavaSript file with the general functionality -->
     <script type="text/javascript" src="assets/js/jelpme.js"></script>
