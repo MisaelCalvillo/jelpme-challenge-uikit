@@ -8,6 +8,24 @@ input:focus {
   outline: none;
 }
 
+/* Colores de fondo
+ ========================================================================== */
+
+.background-plata {
+  background: #F1EFF2;
+}
+
+.background-calcio {
+  background: #F8F6F8;
+}
+
+.background-titanio-misa {
+  background: rgb(124,18,188);
+}
+
+
+ /* ========================================================================== */
+
 .logo-main {
   padding: 45px 30%;
 }
@@ -30,16 +48,81 @@ input:focus {
 }
 
 .ingresar:hover {
-  background-color: #f10ec0;
+  background-color: #c10b99;
   /* box-shadow: 0 4px #efa424;
   top: 2px; */
 }
 
 .ingresar:active {
-  background-color: #c10b99;
+  background-color: #910873;
   /* box-shadow: 0 0 #efa424;
   top: 6px; */
 }
+
+.nombre-usuario {
+  padding-top: 10%;
+  padding-bottom: 50px;
+}
+
+.cerrar {
+  margin-top: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #EE3B5E;
+  border-color: #EE3B5E;
+  font-size: 20px;
+}
+
+.cerrar:hover {
+  color: #cc0000;
+  border-color: #cc0000;
+}
+
+.cerrar:active {
+  color: #990000;
+  border-color: #990000;
+}
+
+.confirmados {
+  color: #FFFFFF;
+  background-color: rgb(124,18,188);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.confirmados:hover {
+  background-color: #6b0fa3;
+  /* box-shadow: 0 4px #efa424;
+  top: 2px; */
+}
+
+.confirmados:active {
+  background-color: #4c0b75;
+  /* box-shadow: 0 0 #efa424;
+  top: 6px; */
+}
+
+.disponibles {
+  color: #FFFFFF;
+  background-color: #F223C6;
+  /* box-shadow: 0 6px #efa424; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.disponibles:hover {
+  background-color: #c10b99;
+  /* box-shadow: 0 4px #efa424;
+  top: 2px; */
+}
+
+.disponibles:active {
+  background-color: #910873;
+  /* box-shadow: 0 0 #efa424;
+  top: 6px; */
+}
+
+
 
 /* Clases de UIKit Modificadas
  ========================================================================== */
