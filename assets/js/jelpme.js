@@ -172,7 +172,25 @@ for(var i = 0; i < available_services.length; i++){
               </div>
               <div class="uk-width-1-2">
                   <div class="uk-card">
-                    <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded">Express</a>
+
+                    <a href="#"
+                       class= "
+                      ${(available_services[i]["service_type"] === "Recurrente") ? "recurrente-button":
+                      (available_services[i]["service_type"] === "Expres") ?  "expres-button" : "unica-vez-button" }
+
+                      uk-button
+                      uk-width-1-1
+                      uk-margin-small
+                      uk-button-large
+                      uk-border-rounded ">
+
+                      <b>
+                        ${(available_services[i]["service_type"] === "Recurrente") ? "Recurrente":
+                        (available_services[i]["service_type"] === "Expres") ?
+                        "Express" : "Unica Vez" }
+                      </b>
+                    </a>
+
                   </div>
               </div>
           </div>
@@ -193,14 +211,15 @@ for(var i = 0; i < available_services.length; i++){
 
       <div id="modal${available_services[i]["id"]}-new" class="uk-modal-full" uk-modal>
         <div class="uk-modal-dialog">
-          <button class="uk-modal-close-full uk-close-large confirmados" type="button" uk-close></button>
+          <button class="uk-modal-close-full uk-close-large ingresar" type="button" uk-close></button>
           <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
               <div class="uk-backgrond-cover" uk-height-viewport>
-                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD9AZc8Rwa0gLzKc19ycokzTkALjo7N4w8&q=Space+Needle,Seattle+WA" allowfullscreen>
+                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyD9AZc8Rwa0gLzKc19ycokzTkALjo7N4w8&center=${available_services[i]["lat_service"]},${available_services[i]["long_service"]}&zoom=18&maptype=satellite" allowfullscreen>
                 </iframe>
               </div>
 
             <div class="uk-padding-large">
+
                 <!-- ========= Card for service details next to Google MAPS ==== -->
                     <div class=" carta uk-card uk-card-large uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
                             <div class="uk-text-center uk-grid-collapse" uk-grid>
@@ -236,7 +255,8 @@ for(var i = 0; i < available_services.length; i++){
                                 </div>
                                 <div class="uk-width-1-2">
                                     <div class="uk-card">
-                                      <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded uk-text-bold">${(available_services[i]["service_type"] === "Recurrente") ? "Recurrente": (available_services[i]["service_type"] === "Express") ? "Express" : "Unica Vez" }</a>
+                                      <a href="#" class="${(available_services[i]["service_type"] === "Recurrente") ? "recurrente-button": (available_services[i]["service_type"] === "Expres" ? "expres-button" : "unica-vez-button") }
+                                       uk-button uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded "><b>${(available_services[i]["service_type"] === "Recurrente") ? "Recurrente": (available_services[i]["service_type"] === "Expres" ? "Expres" : "Unica Vez" ) }</b></a>
                                     </div>
                                 </div>
                             </div>
@@ -263,6 +283,13 @@ for(var i = 0; i < available_services.length; i++){
   `;
   $(".nuevos-servicios").append(nuevoServicio);
 }
+
+
+
+
+// ================================================================================
+
+
 
 // loop through all the my services
 for(var i = 0; i < my_services.length; i++){
@@ -301,7 +328,25 @@ for(var i = 0; i < my_services.length; i++){
               </div>
               <div class="uk-width-1-2">
                   <div class="uk-card">
-                    <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded">Express</a>
+
+                    <a href="#"
+                       class= "
+                      ${(my_services[i]["service_type"] === "Recurrente") ? "recurrente-button":
+                      (my_services[i]["service_type"] === "Expres") ?  "expres-button" : "unica-vez-button" }
+
+                      uk-button
+                      uk-width-1-1
+                      uk-margin-small
+                      uk-button-large
+                      uk-border-rounded ">
+
+                      <b>
+                        ${(my_services[i]["service_type"] === "Recurrente") ? "Recurrente":
+                        (my_services[i]["service_type"] === "Expres") ?
+                        "Express" : "Unica Vez" }
+                      </b>
+                    </a>
+
                   </div>
               </div>
           </div>
@@ -309,7 +354,7 @@ for(var i = 0; i < my_services.length; i++){
           <div class="uk-text-center uk-grid-collapse" uk-grid>
               <div class="uk-width-1-1">
                   <div class="uk-card">
-                    <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge confirmados uk-margin-medium uk-text-bold
+                    <a href="#modal${my_services[i]["id"]}-new" uk-toggle><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge confirmados uk-margin-medium uk-text-bold
                       uk-margin-remove uk-padding-remove
                       uk-border-rounded" >Ver Detalles</button></a>
                   </div>
@@ -317,6 +362,79 @@ for(var i = 0; i < my_services.length; i++){
           </div>
     </div>
   </div>
+
+  <!--==================== FULL MODAL FOR A NEW WINDOW ================== -->
+
+      <div id="modal${my_services[i]["id"]}-new" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+          <button class="uk-modal-close-full uk-close-large confirmados" type="button" uk-close></button>
+          <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+              <div class="uk-backgrond-cover" uk-height-viewport>
+                <iframe width="100%" height="95%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyD9AZc8Rwa0gLzKc19ycokzTkALjo7N4w8&center=${my_services[i]["lat_service"]},${my_services[i]["long_service"]}&zoom=18&maptype=satellite" allowfullscreen>
+                </iframe>
+              </div>
+
+            <div class="uk-padding-large">
+
+                <!-- ========= Card for service details next to Google MAPS ==== -->
+                    <div class=" carta uk-card uk-card-large uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
+                            <div class="uk-text-center uk-grid-collapse" uk-grid>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-card ">
+                                      <p class="uk-margin-remove">Dirección</p>
+                                      <h3 class="uk-margin-remove"><b>${my_services[i]["addres_street"]}, ${my_services[i]["addres_neighborhood"]}, ${my_services[i]["city"]}</b></h3>
+                                </div>
+                            </div>
+                          </div>
+
+                            <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+                                <div class="uk-width-1-2">
+                                    <div class="uk-card  uk-card-body">
+                                      <p class="uk-margin-remove">Hora</p>
+                                      <h3 class="uk-margin-remove"><b>${my_services[i]["hour"]}</b></h3>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <div class="uk-card uk-card-body">
+                                      <p class="uk-margin-remove uk-padding-remove">Fecha</p>
+                                      <h3 class="uk-margin-remove"><b>${my_services[i]["date"]}</b></h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+                                <div class="uk-width-1-2">
+                                    <div class="uk-card  uk-card-body">
+                                      <p class="uk-margin-remove">Duración</p>
+                                      <h3 class="uk-margin-remove"><b>${my_services[i]["lenght"]} horas</b></h3>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <div class="uk-card">
+                                      <a href="#" class="${(my_services[i]["service_type"] === "Recurrente") ? "recurrente-button": (my_services[i]["service_type"] === "Expres" ? "expres-button" : "unica-vez-button") }
+                                       uk-button uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded "><b>${(my_services[i]["service_type"] === "Recurrente") ? "Recurrente": (my_services[i]["service_type"] === "Expres" ? "Expres" : "Unica Vez" ) }</b></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-text-center uk-grid-collapse" uk-grid>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-card">
+                                      <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge green-button uk-margin-medium uk-text-bold
+                                        uk-margin-remove uk-padding-remove
+                                        uk-border-rounded" >Llamar a tu cliente</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                <!-- ========= Card for service details next to Google MAPS ==== -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--==================== FULL MODAL FOR A NEW WINDOW ================== -->
+
 </div>
   `;
   $(".mis-servicios").append(miServicio);

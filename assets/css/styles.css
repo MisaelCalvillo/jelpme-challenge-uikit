@@ -168,17 +168,17 @@ input:focus {
 }
 
 /* ===================================== */
-.express-button {
+.expres-button {
   color: #FFFFFF;
   background-color: #486EFC;
 }
 
-.express-button:hover {
+.expres-button:hover {
   color: #FFFFFF;
   background-color: #0439fb;
 }
 
-.express-button:active {
+.expres-button:active {
   color: #FFFFFF;
   background-color: #032ec9;
 }
