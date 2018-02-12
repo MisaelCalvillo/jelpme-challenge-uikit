@@ -167,6 +167,51 @@ input:focus {
   top: 6px; */
 }
 
+/* ===================================== */
+.express-button {
+  color: #FFFFFF;
+  background-color: #486EFC;
+}
+
+.express-button:hover {
+  color: #FFFFFF;
+  background-color: #0439fb;
+}
+
+.express-button:active {
+  color: #FFFFFF;
+  background-color: #032ec9;
+}
+/* ================================= */
+.recurrente-button {
+  color: #FFFFFF;
+  background-color: #FFBB40;
+}
+
+.recurrente-button:hover {
+  color: #FFFFFF;
+  background-color: #ffaf1a;
+}
+
+.recurrente-button:active {
+  color: #FFFFFF;
+  background-color: #e69500;
+}
+/* ===================================== */
+.unica-vez-button {
+  color: #FFFFFF;
+  background-color: #EE3B5E;
+}
+
+.unica-vez-button:hover {
+  color: #FFFFFF;
+  background-color: #eb143f;
+}
+
+.unica-vez-button:active {
+  color: #FFFFFF;
+  background-color: #bc1033;
+}
 
 /* Clases de UIKit Modificadas
  ========================================================================== */

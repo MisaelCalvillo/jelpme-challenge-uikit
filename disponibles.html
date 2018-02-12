@@ -1,169 +1,176 @@
 <!DOCTYPE html>
 <html class="background-plata">
-  <head>
-    <title>Servicios</title>
-    <!-- Meta tags for encoding and browser size measuring -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Connection with CSS stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/css/uikit.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-    <!-- Connection with Font Awesome icons library -->
-    <!-- PENDIENTE: Verificar si puedo solo usar el archivo .min.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!-- Connection with JavaScript files -->
-    <script type="text/javascript" src="assets/js/uikit.min.js"></script>
-    <script type="text/javascript" src="assets/js/uikit-icons.min.js"></script>
-    <!-- Connection with JQuery JavaScript file -->
-    <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
-  </head>
-  <body>
-    <!-- Add nav on top -->
-      <div class="uk-animation-slide-left" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="welcome.html"><button class="uk-close-large-available" type="button" uk-close=" ratio: 1.8"></button></a></li>
-                    <li>
-                        <a href="#"></a>
-                      </li>
-                    </ul>
-            </div>
 
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a class="uk-text-bold" href="#"><p class="new-message">Nuevos Servicios</p></a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+  <title>Servicios</title>
+  <!-- Meta tags for encoding and browser size measuring -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Connection with CSS stylesheets -->
+  <link rel="stylesheet" type="text/css" href="assets/css/uikit.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+  <!-- Connection with Font Awesome icons library -->
+  <!-- PENDIENTE: Verificar si puedo solo usar el archivo .min.css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- Connection with JavaScript files -->
+  <script type="text/javascript" src="assets/js/uikit.min.js"></script>
+  <script type="text/javascript" src="assets/js/uikit-icons.min.js"></script>
+  <!-- Connection with JQuery JavaScript file -->
+  <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+  <!-- Add nav on top -->
+  <div class="uk-animation-slide-left" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+      <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="welcome.html"><button class="uk-close-large-available" type="button" uk-close=" ratio: 1.8"></button></a></li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
       </div>
 
-      <div class="uk-container uk-container-small uk-animation-slide-top uk-flex uk-flex-column nuevos-servicios">
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active">
+            <a class="uk-text-bold" href="#">
+              <p class="new-message">Nuevos Servicios</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-        <!-- TEMPLATE FOR EVERY CARD ELEMENT -->
-        <div class=" carta uk-card  uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
-                <div class="uk-text-center uk-grid-collapse" uk-grid>
-                    <div class="uk-width-1-1">
-                        <div class="uk-card ">
-                          <p class="uk-margin-remove">Dirección</p>
-                          <h3 class="uk-margin-remove"><b>Zamora 177, Int 101, Condesa, CDMX</b></h3>
-                    </div>
-                </div>
-              </div>
+  <div class="uk-container uk-container-small uk-animation-slide-top uk-flex uk-flex-column nuevos-servicios">
 
-                <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
-                    <div class="uk-width-1-2">
-                        <div class="uk-card  uk-card-body">
-                          <p class="uk-margin-remove">Hora</p>
-                          <h3 class="uk-margin-remove"><b>7:00 AM</b></h3>
-                        </div>
-                    </div>
-                    <div class="uk-width-1-2">
-                        <div class="uk-card uk-card-body">
-                          <p class="uk-margin-remove uk-padding-remove">Fecha</p>
-                          <h3 class="uk-margin-remove"><b>30 feb</b></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
-                    <div class="uk-width-1-2">
-                        <div class="uk-card  uk-card-body">
-                          <p class="uk-margin-remove">Duración</p>
-                          <h3 class="uk-margin-remove"><b>4 horas</b></h3>
-                        </div>
-                    </div>
-                    <div class="uk-width-1-2">
-                        <div class="uk-card">
-                          <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded">Express</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-text-center uk-grid-collapse" uk-grid>
-                    <div class="uk-width-1-1">
-                        <div class="uk-card">
-                          <a href="#modal-CAMBIAR-POR-ID" uk-toggle><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-margin-medium uk-text-bold
-                            uk-margin-remove uk-padding-remove
-                            uk-border-rounded" >Ver Detalles</button></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- TEMPLATE FOR EVERY CARD ELEMENT -->
+    <div class=" carta uk-card  uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
+      <div class="uk-text-center uk-grid-collapse" uk-grid>
+        <div class="uk-width-1-1">
+          <div class="uk-card ">
+            <p class="uk-margin-remove">Dirección</p>
+            <h3 class="uk-margin-remove"><b>Zamora 177, Int 101, Condesa, CDMX</b></h3>
           </div>
         </div>
-      <!--==================== FULL MODAL FOR A NEW WINDOW ================== -->
+      </div>
 
-          <div id="modal-CAMBIAR-POR-ID" class="uk-modal-full" uk-modal>
-            <div class="uk-modal-dialog">
-              <button class="uk-modal-close-full uk-close-large ingresar" type="button" uk-close></button>
-              <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
-                  <div class="uk-backgrond-cover" uk-height-viewport>
-                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD9AZc8Rwa0gLzKc19ycokzTkALjo7N4w8&q=Space+Needle,Seattle+WA" allowfullscreen>
+      <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+        <div class="uk-width-1-2">
+          <div class="uk-card  uk-card-body">
+            <p class="uk-margin-remove">Hora</p>
+            <h3 class="uk-margin-remove"><b>7:00 AM</b></h3>
+          </div>
+        </div>
+        <div class="uk-width-1-2">
+          <div class="uk-card uk-card-body">
+            <p class="uk-margin-remove uk-padding-remove">Fecha</p>
+            <h3 class="uk-margin-remove"><b>30 feb</b></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+        <div class="uk-width-1-2">
+          <div class="uk-card  uk-card-body">
+            <p class="uk-margin-remove">Duración</p>
+            <h3 class="uk-margin-remove"><b>4 horas</b></h3>
+          </div>
+        </div>
+        <div class="uk-width-1-2">
+          <div class="uk-card">
+            <a href="#" class="uk-button uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded uk-text-bold unica-vez-button">Express</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-text-center uk-grid-collapse" uk-grid>
+        <div class="uk-width-1-1">
+          <div class="uk-card">
+            <a href="#modal-CAMBIAR-POR-ID" uk-toggle><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge ingresar uk-margin-medium uk-text-bold
+                            uk-margin-remove uk-padding-remove
+                            uk-border-rounded" >Ver Detalles</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================== FULL MODAL FOR A NEW WINDOW ================== -->
+
+  <div id="modal-CAMBIAR-POR-ID" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+      <button class="uk-modal-close-full uk-close-large ingresar" type="button" uk-close></button>
+      <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+        <div class="uk-backgrond-cover" uk-height-viewport>
+          <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD9AZc8Rwa0gLzKc19ycokzTkALjo7N4w8&q=Space+Needle,Seattle+WA" allowfullscreen>
                     </iframe>
-                  </div>
+        </div>
 
-                <div class="uk-padding-large">
-                    <!-- ========= Card for service details next to Google MAPS ==== -->
-                        <div class=" carta uk-card uk-card-large uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
-                                <div class="uk-text-center uk-grid-collapse" uk-grid>
-                                    <div class="uk-width-1-1">
-                                        <div class="uk-card ">
-                                          <p class="uk-margin-remove">Dirección</p>
-                                          <h3 class="uk-margin-remove"><b>Zamora 177, Int 101, Condesa, CDMX</b></h3>
-                                    </div>
-                                </div>
-                              </div>
+        <div class="uk-padding-large">
+          <!-- ========= Card for service details next to Google MAPS ==== -->
+          <div class=" carta uk-card uk-card-large uk-card-default uk-card-hover uk-grid-match uk-border-rounded servicio">
+            <div class="uk-text-center uk-grid-collapse" uk-grid>
+              <div class="uk-width-1-1">
+                <div class="uk-card ">
+                  <p class="uk-margin-remove">Dirección</p>
+                  <h3 class="uk-margin-remove"><b>Zamora 177, Int 101, Condesa, CDMX</b></h3>
+                </div>
+              </div>
+            </div>
 
-                                <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
-                                    <div class="uk-width-1-2">
-                                        <div class="uk-card  uk-card-body">
-                                          <p class="uk-margin-remove">Hora</p>
-                                          <h3 class="uk-margin-remove"><b>7:00 AM</b></h3>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-1-2">
-                                        <div class="uk-card uk-card-body">
-                                          <p class="uk-margin-remove uk-padding-remove">Fecha</p>
-                                          <h3 class="uk-margin-remove"><b>30 feb</b></h3>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+              <div class="uk-width-1-2">
+                <div class="uk-card  uk-card-body">
+                  <p class="uk-margin-remove">Hora</p>
+                  <h3 class="uk-margin-remove"><b>7:00 AM</b></h3>
+                </div>
+              </div>
+              <div class="uk-width-1-2">
+                <div class="uk-card uk-card-body">
+                  <p class="uk-margin-remove uk-padding-remove">Fecha</p>
+                  <h3 class="uk-margin-remove"><b>30 feb</b></h3>
+                </div>
+              </div>
+            </div>
 
-                                <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
-                                    <div class="uk-width-1-2">
-                                        <div class="uk-card  uk-card-body">
-                                          <p class="uk-margin-remove">Duración</p>
-                                          <h3 class="uk-margin-remove"><b>4 horas</b></h3>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-1-2">
-                                        <div class="uk-card">
-                                          <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded">Express</a>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+              <div class="uk-width-1-2">
+                <div class="uk-card  uk-card-body">
+                  <p class="uk-margin-remove">Duración</p>
+                  <h3 class="uk-margin-remove"><b>4 horas</b></h3>
+                </div>
+              </div>
+              <div class="uk-width-1-2">
+                <div class="uk-card">
+                  <a href="#" class="uk-button uk-width-1-1 uk-margin-small uk-button-large uk-border-rounded uk-text-bold">Express</a>
+                </div>
+              </div>
+            </div>
 
-                                <div class="uk-text-center uk-grid-collapse" uk-grid>
-                                    <div class="uk-width-1-1">
-                                        <div class="uk-card">
-                                          <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge green-button uk-margin-medium uk-text-bold
+            <div class="uk-text-center uk-grid-collapse" uk-grid>
+              <div class="uk-width-1-1">
+                <div class="uk-card">
+                  <a href="welcome.html"><button class="uk-button  uk-width-1-1 uk-button-large uk-box-shadow-xlarge green-button uk-margin-medium uk-text-bold
                                             uk-margin-remove uk-padding-remove
                                             uk-border-rounded" >Quiero este servicio</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                        </div>
-                    <!-- ========= Card for service details next to Google MAPS ==== -->
                 </div>
               </div>
             </div>
           </div>
-        <!--==================== FULL MODAL FOR A NEW WINDOW ================== -->
+        </div>
+        <!-- ========= Card for service details next to Google MAPS ==== -->
       </div>
+    </div>
+  </div>
+  </div>
+  <!--==================== FULL MODAL FOR A NEW WINDOW ================== -->
+  </div>
 
 
-    <!-- Connect with the JavaSript file with the general functionality -->
-    <script type="text/javascript" src="assets/js/jelpme.js"></script>
-  </body>
+  <!-- Connect with the JavaSript file with the general functionality -->
+  <script type="text/javascript" src="assets/js/jelpme.js"></script>
+</body>
+
 </html>
