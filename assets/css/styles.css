@@ -10,6 +10,9 @@ input:focus {
 
 /* Colores de fondo
  ========================================================================== */
+.background-cromo-misa {
+  background: #30AAF9;
+}
 
 .background-plata {
   background: #F1EFF2;
