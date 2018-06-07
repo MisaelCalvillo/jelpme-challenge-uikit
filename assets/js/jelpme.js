@@ -282,6 +282,7 @@ for(var i = 0; i < available_services.length; i++){
 </div>
   `;
   $(".nuevos-servicios").append(nuevoServicio);
+  // document.getElementById("nuevos-servicios").appendChild(nuevoServicio);
 }
 
 
